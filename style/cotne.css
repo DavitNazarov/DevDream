@@ -79,6 +79,24 @@ input {
     "content"
 }
 
+/* NAVBAR */
+header .navbar {
+    background-color: rgb(122, 122, 122) !important;
+  }
+  header .navbar .container-fluid .navbar-brand {
+    color: white;
+  }
+  header .navbar .container-fluid .collapse ul {
+    column-gap: 30px;
+  }
+  header .navbar .container-fluid .collapse ul li a {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  header .navbar .container-fluid .collapse ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
 /* PROFILE */
 
 .profile {
@@ -211,14 +229,23 @@ input {
 
 /* FOOTER */
 
-.footer {
-    grid-area: footer;
-    height: 200px;
-    background-color: #876768;
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
 }
-
-.phone-fix {
-    width: 600px;
+footer .footer {
+    width: 100%;
+    height: 100%;
+}
+footer .footer h5 {
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-size: 12px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
 }
 
 /* Responsiveness */
