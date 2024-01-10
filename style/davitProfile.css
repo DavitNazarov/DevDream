@@ -260,4 +260,7 @@ ul{
           z-index: 10000;
 
     }
+    footer {
+        margin-bottom: 56px;
+    }
 }

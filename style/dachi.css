@@ -251,6 +251,9 @@ main {
 		width: 100%;
 		z-index: 100;
 	}
+	footer {
+		margin-bottom: 56px;
+	}
 }
 
 

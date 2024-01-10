@@ -27,6 +27,9 @@
     bottom: 0%;
     width: 100%;
   }
+  footer {
+    margin-bottom: 56px;
+  }
 }
 
 /*# sourceMappingURL=responsive.css.map */
