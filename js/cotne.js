@@ -90,3 +90,18 @@ function openFileInput(editButton) {
 for (var i = 0; i < 4; i++) {
     addPost();
 }
+
+// star rating
+document.addEventListener("DOMContentLoaded", function () {
+    const stars = document.querySelectorAll(".stars svg")
+    const rated = document.querySelectorAll(".rated")
+
+    stars.forEach((star, index) => {
+        star.addEventListener("click", function () {
+            stars.forEach((s) => s.classList.remove("rated"));
+            for (let i = 0; i <= index; i++) {
+                    stars[i].classList.toggle("rated")
+            }
+        })
+    })
+})
