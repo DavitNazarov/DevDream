@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Global style fix */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth !important;
+    height: -webkit-fill-available;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    height: -webkit-fill-available;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+h1 {
+    font-size: 2.3rem;
+}
+label {
+    cursor: pointer;
+}
+input {
+    display: none;
+}
+
+/* Variables */
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexAround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.border {
+    border: 1px solid grey;
+}
+.picture-text {
+    font-size: 2rem;
+}
+.regular14 {
+    font-size: 1.4rem;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* Layout */
+
+.grid-container {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "profile"
+    "content"
+}
+
+/* PROFILE */
+
+.profile {
+    grid-area: profile;
+}
+.background-image {
+    background-color: #C9C9C9;
+    height: 250px;
+}
+.bg-img {
+    width: 100%;
+    height: 100%;
+}
+.bg-img[src=""] {
+    display: none;
+}
+#bg-text {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+.stars {
+    top: 20px;
+    left: 20px;
+}
+.add-pic-container {
+    background-color: #998181;
+    height: 50px;
+}
+.views{
+    margin-left: 20px;
+    gap: 10px;
+}
+.add-pic {
+    margin-right: 50px;
+}
+.pfp-container {
+    width: 250px;
+    height: 250px;
+    top: 50px;
+    right: 50%;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(50%, 50%);
+}
+.pfp {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#pfp-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.pfp-camera {
+    bottom: 0;
+    right: 0;
+    transform: translateY(-50%); 
+}
+.person-name {
+    margin-top: 130px;
+}
+
+/* CONTENT */
+
+.content {
+    grid-area: content;
+}
+.heading {
+    margin: 50px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.heading:hover {
+    transform: scale(1.1);
+}
+.posts-container {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 50px;
+    padding-bottom: 100px;
+    min-height: 500px;
+}
+.post {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.post-title {
+    cursor: text;
+}
+.post-text {
+    cursor: text;
+}
+.post:hover {
+    .edit-post {
+        display: flex;
+    }
+    transform: scale(1.03);
+}
+.post-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.postImg {
+    width: 100%;
+    height: 100%;
+}
+.edit-post {
+    display: none;
+    top: 0;
+    right: 0;
+    gap: 10px;
+    padding: 5px;
+    background-color: #998181;
+    z-index: 11;
+}
+.edit {
+    margin-left: 5px;
+    cursor: pointer;
+}
+.delete {
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    height: 200px;
+    background-color: #876768;
+}
+
+.phone-fix {
+    width: 600px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1024px) {
+    .profile {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .post{
+        width: 90%;
+        height: auto;
+    }
+    .postImg{
+        width: 90%;
+        height: auto;
+    }
+    .views {
+        margin-left: 5px;
+    }
+    .eye {
+        display: none;
+    }
+    .add-pic {
+        margin-right: 5px;
+    }
+    .heading {
+        margin: 50px 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .pfp-container {
+        width: 150px;
+        height: 150px;
+        top: 150px;
+    }
+    .pfp-camera {
+        transform: translateY(30%)
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    .heading {
+        font-size: 1.2rem;
+        margin: 50px 0px;
+    }
+}

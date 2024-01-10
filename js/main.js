@@ -30,7 +30,6 @@ carousell.addEventListener("mousedown", dragstrat);
 carousell.addEventListener("mousemove", dragging);  // მაუსის ევენთები
 document.addEventListener("mouseup", dragStop);
 
- 
 
 
 
