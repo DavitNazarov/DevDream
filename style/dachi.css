@@ -160,6 +160,8 @@ main {
 	padding: 30px;
 	position: relative;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .progress-container {
@@ -216,7 +218,6 @@ main {
 	color: #fff!important;
 	font-size: 16px!important;
 	padding: 12px 25px!important;
-	position: absolute;
 	bottom: 30px!important;
 	right: 30px!important;
 	letter-spacing: 1px!important;
@@ -240,6 +241,7 @@ main {
 }
 
 
+<<<<<<< HEAD
  footer {
 	width: 100%;
 	height: 50px;
@@ -263,6 +265,8 @@ main {
   }
   
 
+=======
+>>>>>>> 7aee460ab22ccd37f71fdbc119d18f3b88df4791
 /* -------------------------------------------------------------responcive-------------------------------------------------------- */
 
 
@@ -286,7 +290,7 @@ main {
 	.course h2 {
 		letter-spacing: 1px;
 		margin: 10px 0px;
-		font-size: 29px;
+		font-size: 20px;
 	}
 }
 @media (max-width:480px) {
