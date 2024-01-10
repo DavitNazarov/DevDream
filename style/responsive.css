@@ -1,0 +1,32 @@
+@media screen and (max-width: 1000px) {
+  main .wraper .carousell {
+    display: grid;
+    grid-auto-columns: calc(50% - 9px);
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 625px) {
+  main .wraper .carousell {
+    display: grid;
+    grid-auto-columns: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .carusel .carousel-inner .carousel-item .forinput form input {
+    width: 100%;
+  }
+  main .carusel .carousel-inner i {
+    top: -33px;
+    position: relative;
+    left: 220px;
+  }
+}
+@media screen and (max-width: 990px) {
+  header {
+    position: fixed;
+    z-index: 10000;
+    bottom: 0%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
