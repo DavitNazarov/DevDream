@@ -1,0 +1,285 @@
+*{
+    max-width: 100%!important;
+	transition: all .3s;
+}
+body {
+    background-color: #53537b!important;
+}
+
+
+/* ----------------------------------------------------------------navigation--------------------------------------------------------------------------------- */
+
+.navbar {
+    --bs-navbar-padding-x: 0;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0!important; 
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1320px!important;
+}
+.JC_END{
+    width: 100% !important;
+    justify-content: end !important;
+    display: flex;
+}
+.forCenter{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+/* -------------------------------------------------------mobile navigation--------------------------------------------------------- */
+
+.mob-nav{
+	display: none;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    border-top: 1px solid;
+    z-index: 999;
+}
+.mob-nav button{
+	color: #000000;
+	margin: auto;
+	width: 100%;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+}
+.mob-nav button i{
+	color: #000000;
+}
+.text{
+	width: 100%;
+    text-align: center;
+    color: #fbfbfb;
+    margin-top: 26px;
+    display: none;
+
+}
+#active{
+    color: white;
+	background-color: #53537b;
+}
+
+
+
+/* ----------------------------------------------------------------filter--------------------------------------------------------------------------------- */
+.filter{
+	display: flex;
+	justify-content: center;
+}
+.filter-btn {
+	transition: all .3s;
+	margin: 21px 5px 5px 5px;
+	border: none;
+	border-radius: 6px;
+	padding: 5px 10px;
+	color: rgb(55, 55, 55);
+}
+.active{
+	transition: all .3s;
+	background-color: rgb(55, 55, 55);
+	color: white;
+}
+/* -----------------------------------------------------------------course cards-------------------------------------------------------------------------- */
+.course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 8px 14px 8px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px auto;
+	overflow: hidden;
+	width: 700px;
+}
+.nuka::after
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+    font-size: 28px;
+}
+
+.course-preview {
+	background-color: #eed94c;
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+}
+
+#C-Sharf{
+	background-color: #651f78;
+}
+#FIGMA{
+    background-color: #000000;
+}
+#HTML{
+    background-color: #e94c17;
+}
+#CSS{
+    background-color: #0077ba;
+}
+#SCSS{
+    background-color: #db6fa3;
+}
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.progress-container {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-align: right;
+	width: 150px;
+}
+
+.progress {
+	background-color: #ddd;
+	border-radius: 3px;
+	height: 5px;
+	width: 100%;
+}
+
+.progress::after {
+	border-radius: 3px;
+	background-color: #eed94c;
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	height: 5px;
+	width: 66%;
+}
+#CSharfProgress::after{
+	background-color: #651f78;
+}
+#FIGMAProgress::after{
+    background-color: #000000;
+}
+#HTMLProgress::after{
+    background-color: #e94c17;
+}
+#CSSProgress::after{
+    background-color: #0077ba;
+}
+#SCSSProgress::after{
+    background-color: #db6fa3;
+}
+.progress-text {
+	font-size: 10px;
+	opacity: 0.6;
+	letter-spacing: 1px;
+}
+
+.btn {
+	background-color: #eed94c!important;
+	border: 0;
+	border-radius: 50px!important;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff!important;
+	font-size: 16px!important;
+	padding: 12px 25px!important;
+	position: absolute;
+	bottom: 30px!important;
+	right: 30px!important;
+	letter-spacing: 1px!important;
+}
+
+.infCard{
+    background-color: white;
+    width: 46.3%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #0000007d;
+}
+
+/* ------------------------------------------------------------footer-------------------------------------------------------------- */
+
+.footer{
+	background-color: rgb(255, 255, 255);
+	padding: 25px;
+}
+
+/* -------------------------------------------------------------responcive-------------------------------------------------------- */
+
+@media (max-width: 1000px) {
+	.navbar{
+		display: none!important;
+	}
+	.mob-nav{
+		display: flex;
+	}
+	.text{
+		display: table;
+	}
+}
+@media (max-width:755px) {
+	.course {
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 8px 14px 8px rgba(0, 0, 0, 0.2);
+		display: block;
+		max-width: 100%;
+		margin: 20px;
+		width: 600px;
+		overflow: hidden;
+	}
+}
+@media (max-width:655px) {
+	.course{
+		width: 400px;
+	}
+	.course h2 {
+		letter-spacing: 1px;
+		margin: 10px 0px;
+		font-size: 29px;
+	}
+}
+@media (max-width:480px) {
+	.course{
+	     width: 200px;
+	}
+}
