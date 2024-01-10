@@ -46,28 +46,6 @@ main {
 	width: 100vh;
 	height: 100vh;
 }
-
-.mob-nav{
-	display: none;
-    justify-content: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    background: white;
-    border-top: 1px solid;
-    z-index: 999;
-}
-.mob-nav button{
-	color: #000000;
-	margin: auto;
-	width: 100%;
-	padding: 20px;
-	background-color: rgba(255, 255, 255, 0);
-	border: none;
-}
-.mob-nav button i{
-	color: #000000;
-}
 .text{
 	width: 100%;
     text-align: center;
@@ -242,7 +220,10 @@ main {
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c14bcacf7311f83181ede7ff0271f9ca1900b926
  footer {
 	width: 100%;
 	height: 50px;
@@ -266,9 +247,20 @@ main {
   }
   
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c14bcacf7311f83181ede7ff0271f9ca1900b926
 /* -------------------------------------------------------------responcive-------------------------------------------------------- */
 
+@media (max-width:1024px) {
+	.navbar {
+		position: fixed !important;
+		bottom: 0;
+		width: 100%;
+		z-index: 100;
+	}
+}
 
 
 @media (max-width:755px) {
