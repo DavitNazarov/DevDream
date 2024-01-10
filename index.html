@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homework</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,600;0,800;0,900;1,600;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/responsive.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">curses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="login  nav-item">
+              <a class=" loginn nav-link " style="color: red !important;" href="">Log in</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- firts autoc carusel -->
+
+  <!-- 5 წამამდე ჭირდება რომ გადავიდეს -->
+  
+  <main>
+    <section class=" carusel">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" data-bs-ride="true">
+          <div class="carousel-item active">
+            <img src="https://w.forfun.com/fetch/6f/6f0d2517054222d338a84d13390eae8f.jpeg" alt="...">
+
+            <h1>text</h1>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <div class="forinput">
+              <form action="search-conteiner">
+                <input type="text" id="search-bar" placeholder="search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://proprikol.ru/wp-content/uploads/2020/06/krasivye-kartinki-zvezd-13.jpg" alt="...">
+            <h1>test</h1>
+            <h3>Lorem ipsum dolor sit amet</h3>
+
+            <div class="forinput">
+
+              <form action="search-conteiner">
+                <input type="text" id="search-bar" placeholder="search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+              </form>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://get.wallhere.com/photo/sunlight-abstract-sphere-symmetry-circle-light-shape-design-line-darkness-computer-wallpaper-fractal-art-macro-photography-invertebrate-spider-web-Ae-Plexus-630175.jpg"
+              alt="...">
+            <h1>test</h1>
+            <h3>Lorem ipsum dolor sit amet</h3>
+
+
+            <!-- უფნქციო search bar -->
+
+            <div class="forinput">
+              <form action="search-conteiner">
+                <input type="text" id="search-bar" placeholder="search...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+              </form>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+
+
+
+    <div class="wraper">
+
+      <h2 class="flex-center">click and mousemove for scroll</h2>
+
+      <ul class=" carousell">
+        <li class="cards" id="cards">
+          <i class="fa-regular fa-heart" id="heart"></i>
+          <h3 class="flex-center">test</h3>
+          <div class="img">
+            <img id="one"
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              alt="" draggable="false">
+          </div>
+
+          <h5>Location</h5>
+          <i id="start" class="fa-regular fa-star">
+            <h6>(rewiev 0.0)</h6>
+          </i>
+          <p>120$/day</p>
+        </li>
+        <li class="cards">
+          <i class="fa-regular fa-heart" id="heart"></i>
+          <h3 class="flex-center">test</h3>
+          <div class="img">
+            <img id="two"
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              alt="" draggable="false">
+          </div>
+          <h5>Location</h5>
+          <i id="start" class="fa-regular fa-star">
+            <h6>(rewiev 0.0)</h6>
+          </i>
+          <p>120$/day</p>
+        </li>
+
+        <li class="cards">
+          <i class="fa-regular fa-heart" id="heart"></i>
+          <h3 class="flex-center">test</h3>
+          <div class="img">
+            <img id="three"
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              alt="" draggable="false">
+          </div>
+          <h5>Location</h5>
+          <i id="start" class="fa-regular fa-star">
+            <h6>(rewiev 0.0)</h6>
+          </i>
+          <p>120$/day</p>
+        </li>
+        <li class="cards">
+          <i class="fa-regular fa-heart" id="heart"></i>
+          <h3 class="flex-center">test</h3>
+          <div class="img">
+            <img id="four"
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              alt="" draggable="false">
+          </div>
+          <h5>Location</h5>
+          <i id="start" class="fa-regular fa-star">
+            <h6>(rewiev 0.0)</h6>
+          </i>
+          <p>120$/day</p>
+        </li>
+        <li class="cards">
+          <i class="fa-regular fa-heart" id="heart"></i>
+          <h3 class="flex-center">test</h3>
+          <div class="img">
+            <img id="five"
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              alt="" draggable="false">
+          </div>
+          <h5>Location</h5>
+          <i id="start" class="fa-regular fa-star ">
+            <h6>(rewiev 0.0)</h6>
+          </i>
+          <p>120$/day</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- second cards -->
+
+    <div class="wraper">
+      <h2 class="flex-center">welcome</h2>
+      <ul class=" carousell">
+        <li class="cards">
+          <div class="img">
+            <img
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+            <h2 class="flex-center" style="padding-top: 10px; color: white;">Helo world</h2>
+          </div>
+        </li>
+
+        <li class="cards">
+          <div class="img">
+            <img
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+            <h2 class="flex-center" style="padding-top: 10px; color: white;">Helo world</h2>
+          </div>
+        </li>
+
+        <li class="cards">
+          <div class="img">
+            <img
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+            <h2 class="flex-center" style="padding-top: 10px; color: white;">Helo world</h2>
+          </div>
+        </li>
+
+        <li class="cards">
+          <div class="img">
+            <img
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+            </div>
+            <h2 class="flex-center" style="padding-top: 10px; color: white;">Helo world</h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- only banner -->
+    <section class="banner">
+
+      <img
+        src="https://vkplay.ru/pre_0x736_resize/hotbox/content_files/game/2021/07/22/bfd60e7931804fd18fe806504597be97.jpg?quality=85"
+        alt="baner image">
+    </section>
+
+
+    <!-- thrid cards-->
+
+    <div class="wraper">
+
+      <h2 class="flex-center"> welcome</h2>
+
+      <ul class=" carousell">
+        <li class="cards" id="cards">
+
+          <h3 class="flex-center">test</h3>
+          <div class="img">
+            <img id="one"
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              alt="" draggable="false">
+          </div>
+
+          <h5>Location</h5>
+          <i id="start" class="fa-regular fa-star">
+            <h6>(rewiev 0.0)</h6>
+          </i>
+
+        </li>
+        <li class="cards">
+
+          <h3 class="flex-center">test</h3>
+          <div class="img">
+            <img id="two"
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              alt="" draggable="false">
+          </div>
+          <h5>Location</h5>
+          <i id="start" class="fa-regular fa-star">
+            <h6>(rewiev 0.0)</h6>
+          </i>
+
+        </li>
+
+        <li class="cards">
+
+          <h3 class="flex-center">test</h3>
+          <div class="img">
+            <img id="three"
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              alt="" draggable="false">
+          </div>
+
+          <i id="start" class="fa-regular fa-star">
+            <h6>(rewiev 0.0)</h6>
+          </i>
+
+        </li>
+        <li class="cards">
+
+          <h3 class="flex-center">test</h3>
+          <div class="img">
+            <img id="four"
+              src="https://www.solaredge.com/us/sites/nam/files/styles/tiny_convert/public/Placeholders/Placeholder-4-3.jpg?itok=yIzzHEkp"
+              alt="" draggable="false">
+          </div>
+
+          <i id="start" class="fa-regular fa-star">
+            <h6>(rewiev 0.0)</h6>
+          </i>
+
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- footer -->
+
+
+    <footer>
+      <div class="footer">
+        <h5 class="flex-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat corporis nesciunt quo
+          mollitia similique nihil illo temporibus? Nobis, sed id, dolorum omnis minima itaque, veniam tenetur nulla
+          incidunt nostrum nemo?</h5>
+      </div>
+    </footer>
+  </main>
+
+
+
+
+  <script src="https://kit.fontawesome.com/c6a092e2e5.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
