@@ -106,7 +106,8 @@ main {
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 8px 14px 8px rgba(0, 0, 0, 0.2);
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr;
 	max-width: 100%;
 	margin: 20px auto;
 	overflow: hidden;
@@ -241,7 +242,7 @@ main {
 }
 
 
-<<<<<<< HEAD
+
  footer {
 	width: 100%;
 	height: 50px;
@@ -256,7 +257,7 @@ main {
 	height: 100%;
 	color: white;
 	margin: auto;
-	font-size: 12px;
+	font-size: 10px;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	text-align: center;
 	display: flex;
@@ -265,8 +266,7 @@ main {
   }
   
 
-=======
->>>>>>> 7aee460ab22ccd37f71fdbc119d18f3b88df4791
+
 /* -------------------------------------------------------------responcive-------------------------------------------------------- */
 
 
@@ -317,3 +317,6 @@ width: 200px;
 	margin: auto;
 }
 }
+
+
+ 
